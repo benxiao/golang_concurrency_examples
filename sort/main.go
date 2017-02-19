@@ -44,7 +44,6 @@ func quicksort_aux(array []int, s int, e int){
 
 		quicksort_aux(array, pivot+1, e)
 
-
 	}
 }
 
@@ -69,28 +68,6 @@ func quicksort(array []int, s int, e int){
 	}
 }
 
-//func goquicksort(array []int, s int, e int){
-//	if e-s > 1 {
-//		var wg sync.WaitGroup
-//		wg.Add(2)
-//
-//
-//		pivot := partition(array, s, e)
-//
-//		go func() {
-//			goquicksort(array, s, pivot)
-//			wg.Done()
-//		}()
-//
-//		go func() {
-//			goquicksort(array, pivot+1, e)
-//			wg.Done()
-//		}()
-//
-//		wg.Wait()
-//	}
-//}
-//
 
 func partition(array []int, s int, e int) int {
 	pivot_index := s
