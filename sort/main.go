@@ -40,9 +40,9 @@ func quicksort_aux(array []int, s int, e int){
 	if e-s > 1 {
 		pivot := partition(array, s, e)
 
-		quicksort(array, s, pivot)
+		quicksort_aux(array, s, pivot)
 
-		quicksort(array, pivot+1, e)
+		quicksort_aux(array, pivot+1, e)
 
 
 	}
