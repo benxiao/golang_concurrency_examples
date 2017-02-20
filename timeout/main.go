@@ -17,6 +17,7 @@ func main() {
 			fmt.Println("You are too slow.")
 		case <-quit: // used to end the conversation
 			fmt.Println("We are done!")
+			//cleanup
 			return
 		}
 	}
