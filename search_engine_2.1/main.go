@@ -50,7 +50,6 @@ func Google(query string) []Result {
 			fmt.Println("time out!")
 			return results
 		}
-
 	}
 	return results
 }
